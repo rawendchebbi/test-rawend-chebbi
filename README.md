@@ -18,8 +18,10 @@ Installation et configuration
 Points finaux à tester
 1. Récupérer les produits
 Endpoint API : GET http://localhost:8181/products
+
 Description :
 Ce endpoint récupère une liste de produits à partir du serveur.
+
 Étapes d'essai :
 Envoyez une requête GET à http://localhost:8181/products.
 Vérifiez que le code d'état de la réponse est 200 (OK).
@@ -28,18 +30,22 @@ Vérifiez le corps de la réponse pour vous assurer qu'il contient une liste de 
 
 3. Récupération du produit par ID
 Point de terminaison : GET http://localhost:8181/product?id=1
-Description:
+
+Description :
 Ce point de terminaison récupère un produit spécifique en fonction de l'ID fourni.
+
 Étapes d'essai :
 Envoyez une requête GET à http://localhost:8181/product?id=1.
 Vérifiez que le code d'état de la réponse est 200 (OK) si le produit existe.
 Si l'ID de produit n'existe pas (par exemple, id=6), vérifiez que le code d'état de la réponse est 404 (Introuvable) et que le message indique que le produit n'existe pas.
 
 
-4. Passer une commande
+5. Passer une commande
 Point de terminaison : POST http://localhost:8181/placeOrder
-Description:
+
+Description :
 Ce point de terminaison vous permet de passer une commande pour plusieurs produits.
+
 Étapes d'essai :
 Envoyez une requête POST à http://localhost:8181/placeOrder avec la charge utile JSON suivante :
 {
