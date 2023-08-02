@@ -7,11 +7,11 @@ Veuillez vous assurer que le projet est en cours d'exécution sur votre ordinate
 
 
 Installation et configuration
-1 - Assurez-vous que Java 11 est installé sur votre machine.
-2 - Faire un clone du repository du projet de : [https://github.com/rawendchebbi/test-rawend-chebbi]
-3 - Ouvrez le projet dans votre IDE Java préféré (par exemple, Visual Studio Code).
-4 - Créez et exécutez l'application Spring Boot.
-5 - Le serveur devrait maintenant fonctionner sur http://localhost:8181 
+1. Assurez-vous que Java 11 est installé sur votre machine.
+2. Faire un clone du repository du projet de : [https://github.com/rawendchebbi/test-rawend-chebbi]
+3. Ouvrez le projet dans votre IDE Java préféré (par exemple, Visual Studio Code).
+4. Créez et exécutez l'application Spring Boot.
+5. Le serveur devrait maintenant fonctionner sur http://localhost:8181 
 
 
 Points finaux à tester
@@ -25,7 +25,7 @@ Vérifiez que le code d'état de la réponse est 200 (OK).
 Vérifiez le corps de la réponse pour vous assurer qu'il contient une liste de produits au format JSON.
 
 
-2. Récupération du produit par ID
+3. Récupération du produit par ID
 Point de terminaison : GET http://localhost:8181/product?id=1
 Description:
 Ce point de terminaison récupère un produit spécifique en fonction de l'ID fourni.
@@ -35,7 +35,7 @@ Vérifiez que le code d'état de la réponse est 200 (OK) si le produit existe.
 Si l'ID de produit n'existe pas (par exemple, id=6), vérifiez que le code d'état de la réponse est 404 (Introuvable) et que le message indique que le produit n'existe pas.
 
 
-3. Passer une commande
+4. Passer une commande
 Point de terminaison : POST http://localhost:8181/placeOrder
 Description:
 Ce point de terminaison vous permet de passer une commande pour plusieurs produits.
